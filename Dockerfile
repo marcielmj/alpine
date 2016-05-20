@@ -1,5 +1,7 @@
 FROM alpine:3.3
 
+MAINTAINER marcielmj <https://github.com/marcielmj>
+
 ENV GLIBC_VERSION="2.23-r1" \
     GLIBC_DOWNLOAD_URL="https://github.com/andyshinn/alpine-pkg-glibc/releases/download" \
     GLIBC_FILENAME="glibc-${GLIBC_VERSION}.apk" \
