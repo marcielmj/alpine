@@ -15,7 +15,6 @@ RUN apk upgrade --update && \
     wget -q -O "/tmp/${GLIBC_FILENAME}" "${GLIBC_DOWNLOAD_URL}/${GLIBC_VERSION}/${GLIBC_FILENAME}" && \
     wget -q -O "/tmp/${GLIBC_BIN_FILENAME}" "${GLIBC_DOWNLOAD_URL}/${GLIBC_VERSION}/${GLIBC_BIN_FILENAME}" && \
     wget -q -O "/tmp/${GLIBC_I18N_FILENAME}" "${GLIBC_DOWNLOAD_URL}/${GLIBC_VERSION}/${GLIBC_I18N_FILENAME}" && \
-    ls /tmp/ && \
     apk add --no-cache "/tmp/${GLIBC_FILENAME}" \
         "/tmp/${GLIBC_BIN_FILENAME}" \
         "/tmp/${GLIBC_I18N_FILENAME}" && \
