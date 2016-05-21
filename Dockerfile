@@ -20,4 +20,5 @@ RUN apk upgrade --update && \
     apk add --no-cache "/tmp/${GLIBC_FILENAME}" "/tmp/${GLIBC_BIN_FILENAME}" "/tmp/${GLIBC_I18N_FILENAME}" && \
     /usr/glibc-compat/bin/localedef --force --inputfile POSIX --charmap UTF-8 C.UTF-8 || true && \
     echo "export LANG=C.UTF-8" > /etc/profile.d/locale.sh && \
+    mkdir -p "/opt/" && \
     rm -rf /etc/apk/keys/andyshinn.rsa.pub /tmp/* /var/cache/apk/*
