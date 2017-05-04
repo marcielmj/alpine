@@ -1,8 +1,8 @@
-FROM alpine:3.4
+FROM alpine:3.5
 
 MAINTAINER marcielmj <https://github.com/marcielmj>
 
-ENV GLIBC_VERSION="2.23-r3"
+ENV GLIBC_VERSION="2.25-r0"
 
 ENV GLIBC_DOWNLOAD_URL="https://github.com/sgerrand/alpine-pkg-glibc/releases/download"
 ENV GLIBC_FILENAME="glibc-${GLIBC_VERSION}.apk"
